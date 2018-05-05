@@ -1,0 +1,44 @@
+.sidebar, .banner {
+    float: left;
+}
+.top__block {
+    @include clearfix;  
+}
+.sidebar {
+    text-align: left;
+    width: 20%;
+}
+.banner {
+    text-align: right;
+    width: 80%;
+}
+.sidebar__link:hover {
+    
+color: #221f1f;
+.sidebar__text {
+    color: #221f1f;
+}
+}
+.sidebar__text {
+color: #4b73b5;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 700;
+line-height: 54px;
+text-transform: uppercase;
+/* Text style for "Главная" */
+letter-spacing: 2.4px;
+}
+
+
+.sidebar__icon {
+    svg * {
+    fill: currentColor;
+
+  }
+}
+.sidebar__icon, .sidebar__text {
+    display: inline-block;
+    vertical-align: middle;
+
+}

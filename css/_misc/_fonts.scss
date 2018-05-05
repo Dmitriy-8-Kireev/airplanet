@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('/fonts/roboto-bold_1-webfont.woff2') format('woff2'),
+    url('/fonts/roboto-bold_1-webfont.woff') format('woff'),
+    url('/fonts/roboto-bold_1-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('/fonts/roboto-light_1-webfont.woff2') format('woff2'),
+    url('/fonts/roboto-light_1-webfont.woff') format('woff'),
+    url('/fonts/roboto-light_1-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('/fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'),
+    url('/fonts/roboto-lightitalic_1-webfont.woff') format('woff'),
+    url('/fonts/roboto-lightitalic_1-webfont.svg#robotolight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin roboto($style : bold) {
+	@if $style == bold {
+		font-family: 'robotobold';
+	}
+
+	@if $style == light {
+		font-family: 'robotolight';
+	}
+
+	@if $style == italic {
+		font-family: 'robotolight_italic';
+	}
+}

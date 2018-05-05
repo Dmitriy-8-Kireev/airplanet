@@ -1,0 +1,31 @@
+.header {
+    background-color: #4b73b5;
+}
+.logotip, .contacts {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+       
+    }
+.logotip {
+    text-align: left
+}
+.contacts   {
+    text-align: right
+}
+.contacts__phone {
+    color: #ffffff;
+font-family: Roboto;
+font-size: 21px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.contacts__link {
+   opacity: 0.7;
+color: #ffffff;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+text-decoration: underline; 
+}

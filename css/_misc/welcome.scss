@@ -1,0 +1,65 @@
+.wraper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.wraper:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+}
+.gate {
+  width: 182px;
+  height: 192px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gate__link {
+  background-repeat: no-repeat;
+  width: 164px;
+  height: 118px;
+  display: inline-block;
+}
+
+.gate__btn {
+  border: 3px solid #1c5bc3;
+  color: #1c5bc3;
+  letter-spacing: 1.2px;
+  font-family: "Gotham Pro Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: transparent;
+  margin-top: 26px;
+  display: block;
+  text-decoration: none;
+  padding: 11px;
+border: 1px solid #1c5bc3;
+}
+.gate__btn:hover {
+    background-color: #1c5bc3;
+    color: #ffffff;
+
+    }
+.gate__btn-text, .gate__btn-img {
+  display: inline-block;
+  vertical-align: middle;
+ }
+ .gate__btn-img {
+    svg * {
+    fill: currentColor;
+
+  }
+}
+.intro {
+  background: url("../img/air/kzhhnb6xsqi-margo-brodowicz.png");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

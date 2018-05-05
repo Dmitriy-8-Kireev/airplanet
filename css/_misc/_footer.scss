@@ -1,0 +1,104 @@
+.footer {
+  height: 75px;
+  margin-top: -75px; // Cмена приоритета footer залез не на wrapper, а под него, для уравнения приоритетов (ось z) footer relative задать
+  position: relative;
+  background-color: #4b73b5;
+}
+.empty {
+  height: 75px; // Блок в самый вниз wrapper высота с наш footer, чтобы контент не залазил под него
+}
+.footer__autor,
+.footer__logo,
+.social {
+  float: left;
+}
+.footer__autor {
+  width: 33.3%;
+  text-align: left;
+  margin-top: 14px;
+}
+.footer__logo {
+  width: 33.3%;
+  text-align: center;
+  margin-top: 20px;
+}
+.social {
+  width: 33.3%;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.adress {
+  width: 270px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.social__text,
+.autor__name,
+.adress__loftsh {
+  color: #ffffff;
+  @include roboto(bold);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social__img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #d4d4d8;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social__list,
+.social__img,
+.social__item {
+  display: inline-block;
+}
+.social__item {
+  margin-right: 7px;
+}
+.social__img:hover {
+  background-color: #ffffff;
+}
+.social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/air/mail.png") no-repeat;
+}
+.social__link--vk {
+  background-position: 0 0;
+}
+.social__link--vk:hover {
+  background-position: 0 bottom;
+}
+.social__link--fb {
+  background-position: -101px 0;
+}
+.social__link--fb:hover {
+  background-position: -101px bottom;
+}
+.social__link--google {
+  background-position: -201px 0;
+}
+.social__link--google:hover {
+  background-position: -200px bottom;
+}
+.social__link--tw {
+  background-position: -301px 0;
+}
+.social__link--tw:hover {
+  background-position: -301px bottom;
+}
+.social__link--mail {
+  background-position: -400px 0;
+}
+.social__link--mail:hover {
+  background-position: -400px bottom;
+}
