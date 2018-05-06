@@ -546,7 +546,7 @@ a {
   text-decoration: underline; }
 
 /* --------- navigation --------- */
-.sidebar, .banner {
+.sidebar, .maincontent {
   float: left; }
 
 .top__block:before, .top__block:after {
@@ -560,7 +560,7 @@ a {
   text-align: left;
   width: 20%; }
 
-.banner {
+.maincontent {
   text-align: right;
   width: 80%; }
 
@@ -587,6 +587,80 @@ a {
   vertical-align: middle; }
 
 /* --------- content --------- */
+.rate:before, .rate:after {
+  content: "";
+  display: table; }
+
+.rate:after {
+  clear: both; }
+
+.title {
+  text-align: left;
+  color: #221f1f;
+  font-family: Roboto;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 38px; }
+
+.rate__lux, .rate__premium, .rate__standart {
+  float: left;
+  width: 20%;
+  margin-right: 12%; }
+
+.rate__pic {
+  width: 68px;
+  height: 68px;
+  background-color: #4b73b5;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative; }
+
+.rate__img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute; }
+
+.rate__title {
+  text-align: center;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 51.38px; }
+
+.rate__text {
+  text-align: center; }
+
+.rate__list {
+  margin-left: 17%; }
+  .rate__list li {
+    list-style: disc; }
+
+.rate__text, .rate__list {
+  width: 185px;
+  text-align: left;
+  color: #221f1f;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.rate__price {
+  margin-left: 17%;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 52px;
+  font-weight: 400;
+  /* Text style for "$" */
+  color: #202020;
+  line-height: 182.3px;
+  /* Text style for "1, 9" */
+  letter-spacing: -1.07px;
+  line-height: 106.58px; }
+
 /* --------- pagination --------- */
 /* --------- footer --------- */
 .footer {
