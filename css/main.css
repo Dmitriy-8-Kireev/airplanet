@@ -602,7 +602,9 @@ a {
   font-weight: 700;
   line-height: 38px; }
 
-.rate__lux, .rate__premium, .rate__standart {
+.rate__lux,
+.rate__premium,
+.rate__standart {
   float: left;
   width: 20%;
   margin-right: 12%; }
@@ -639,7 +641,8 @@ a {
   .rate__list li {
     list-style: disc; }
 
-.rate__text, .rate__list {
+.rate__text,
+.rate__list {
   width: 185px;
   text-align: left;
   color: #221f1f;
@@ -660,6 +663,54 @@ a {
   /* Text style for "1, 9" */
   letter-spacing: -1.07px;
   line-height: 106.58px; }
+
+.news {
+  margin-top: 28px; }
+  .news:before, .news:after {
+    content: "";
+    display: table; }
+  .news:after {
+    clear: both; }
+
+.news__list {
+  margin-top: 55px;
+  margin-left: -5px; }
+
+.news__item {
+  padding-bottom: 18px;
+  margin-bottom: 30px;
+  height: 16%; }
+
+.news__pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left; }
+
+.news__text {
+  width: 700px;
+  padding-left: 20px;
+  float: left;
+  text-align: left; }
+
+.news__name {
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 21px; }
+
+.news__data {
+  color: #656464;
+  font-family: "Roboto Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px; }
+
+.news__content {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px; }
 
 /* --------- pagination --------- */
 /* --------- footer --------- */
