@@ -565,9 +565,9 @@ a {
   width: 80%; }
 
 .sidebar__link:hover {
-  color: #221f1f; }
+  color: black; }
   .sidebar__link:hover .sidebar__text {
-    color: #221f1f; }
+    color: black; }
 
 .sidebar__text {
   color: #4b73b5;
