@@ -147,7 +147,7 @@
   transform: translate(-50%, -50%);
 }
 .visually-hidden {
-    display: none;
+  display: none;
 }
 .pilot__desription {
   @include clearfix;
@@ -155,24 +155,25 @@
 }
 .pilot__item {
   float: left;
-  width: 33%;
+  width: 30%;
   text-align: center;
-  width: 263px;
   height: 350px;
+  margin-right: 2%;
 }
 .pilot_pic-wrapper {
   width: 160px;
-height: 160px;
-   border-radius: 50%;
-   margin: 0 auto;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 26px;
 }
 .pilot__pic {
   position: relative;
-  background-color:   #4b73b5;
+  background-color: #4b73b5;
   opacity: 0.6;
   border-radius: 50%;
-height: 100%;
-  }
+  height: 100%;
+}
 .pilot__name {
   font-size: 24px;
   font-weight: 700;
@@ -183,45 +184,53 @@ height: 100%;
   top: 50%;
   left: 50%;
   text-align: center;
-    color: #ffffff;
-   @include roboto(italic);
+  color: #ffffff;
+  @include roboto(italic);
   line-height: 21px;
+  margin-top: 38px;
 }
-  .pilot__img {
-    border-radius: 50%;
-      }
+.pilot__img {
+  border-radius: 50%;
+}
 .pilot__full-name {
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
-} 
+}
 .pilot__profession {
-color: #4b73b5;
-@include roboto(italic);
-font-weight: 700;
+  color: #4b73b5;
+  @include roboto(italic);
+  font-weight: 700;
 }
 .pilot_opinion {
-@include roboto(light);
-font-weight: 500;
+  @include roboto(light);
+  font-weight: 500;
 }
 
+.partners {
+  @include clearfix;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.partners__list {
+  margin: 50px 1px;
+  margin-left: 56px;
+}
 .partners__item {
-    width: 160px;
-    height: 62px;
-    float: left;
-    margin-right: 114px;
-    text-align: center;
-    margin-bottom: 45px;
-
-
+  width: 160px;
+  height: 62px;
+  float: left;
+  margin-right: 105px;
+  text-align: center;
+  margin-bottom: 45px;
 }
 .partners__img-wrapper {
-    margin: 0 auto;
-    filter: grayscale(100%);
+  margin: 0 auto;
+  filter: none;
 }
 .partners__img-wrapper:hover {
-    filter: none;
+  filter: none;
 }
 .partners__link {
-    display: inline-block;
+  display: inline-block;
 }

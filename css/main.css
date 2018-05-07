@@ -455,19 +455,19 @@ table {
 /* --------- compass sprites --------- */
 /* --------- responsive mixins --------- */
 @font-face {
-  font-family: 'robotobold';
+  font-family: "robotobold";
   src: url("/fonts/roboto-bold_1-webfont.woff2") format("woff2"), url("/fonts/roboto-bold_1-webfont.woff") format("woff"), url("/fonts/roboto-bold_1-webfont.svg#robotobold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotolight';
+  font-family: "robotolight";
   src: url("/fonts/roboto-light_1-webfont.woff2") format("woff2"), url("/fonts/roboto-light_1-webfont.woff") format("woff"), url("/fonts/roboto-light_1-webfont.svg#robotolight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotolight_italic';
+  font-family: "robotolight_italic";
   src: url("/fonts/roboto-lightitalic_1-webfont.woff2") format("woff2"), url("/fonts/roboto-lightitalic_1-webfont.woff") format("woff"), url("/fonts/roboto-lightitalic_1-webfont.svg#robotolight_italic") format("svg");
   font-weight: normal;
   font-style: normal; }
@@ -518,7 +518,8 @@ a {
 .header {
   background-color: #4b73b5; }
 
-.logotip, .contacts {
+.logotip,
+.contacts {
   float: left;
   width: 50%;
   margin-top: 20px;
@@ -545,8 +546,23 @@ a {
   font-weight: 700;
   text-decoration: underline; }
 
+.contacts__pop-up {
+  display: none;
+  position: absolute; }
+
+a:hover .contacts__pop-up {
+  display: block;
+  margin-top: -60px;
+  margin-left: 70px;
+  padding: 1em;
+  border: 16px solid transparent;
+  -webkit-border-image: 16 -webkit-repeating-linear-gradient(135deg, #ffffff 0, #ffffff 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+  -o-border-image: 16 -o-repeating-linear-gradient(135deg, #ffffff 0, #ffffff 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+  border-image: 16 repeating-linear-gradient(-45deg, #ffffff 0, #ffffff 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em); }
+
 /* --------- navigation --------- */
-.sidebar, .maincontent {
+.sidebar,
+.maincontent {
   float: left; }
 
 .top__block:before, .top__block:after {
@@ -582,7 +598,8 @@ a {
 .sidebar__icon svg * {
   fill: currentColor; }
 
-.sidebar__icon, .sidebar__text {
+.sidebar__icon,
+.sidebar__text {
   display: inline-block;
   vertical-align: middle; }
 
@@ -805,16 +822,17 @@ a {
 
 .pilot__item {
   float: left;
-  width: 33%;
+  width: 30%;
   text-align: center;
-  width: 263px;
-  height: 350px; }
+  height: 350px;
+  margin-right: 2%; }
 
 .pilot_pic-wrapper {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 26px; }
 
 .pilot__pic {
   position: relative;
@@ -836,8 +854,9 @@ a {
   left: 50%;
   text-align: center;
   color: #ffffff;
-  font-family: 'robotolight_italic';
-  line-height: 21px; }
+  font-family: "robotolight_italic";
+  line-height: 21px;
+  margin-top: 38px; }
 
 .pilot__img {
   border-radius: 50%; }
@@ -849,25 +868,38 @@ a {
 
 .pilot__profession {
   color: #4b73b5;
-  font-family: 'robotolight_italic';
+  font-family: "robotolight_italic";
   font-weight: 700; }
 
 .pilot_opinion {
-  font-family: 'robotolight';
+  font-family: "robotolight";
   font-weight: 500; }
+
+.partners {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .partners:before, .partners:after {
+    content: "";
+    display: table; }
+  .partners:after {
+    clear: both; }
+
+.partners__list {
+  margin: 50px 1px;
+  margin-left: 56px; }
 
 .partners__item {
   width: 160px;
   height: 62px;
   float: left;
-  margin-right: 114px;
+  margin-right: 105px;
   text-align: center;
   margin-bottom: 45px; }
 
 .partners__img-wrapper {
   margin: 0 auto;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  -webkit-filter: none;
+  filter: none; }
 
 .partners__img-wrapper:hover {
   -webkit-filter: none;
@@ -1152,7 +1184,7 @@ li.sidebar__item {
 .autor__name,
 .adress__loftsh {
   color: #ffffff;
-  font-family: 'robotobold';
+  font-family: "robotobold";
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 10px; }
@@ -1259,7 +1291,8 @@ li.sidebar__item {
   background-color: #1c5bc3;
   color: #ffffff; }
 
-.gate__btn-text, .gate__btn-img {
+.gate__btn-text,
+.gate__btn-img {
   display: inline-block;
   vertical-align: middle; }
 

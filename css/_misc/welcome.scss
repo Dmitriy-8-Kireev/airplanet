@@ -40,26 +40,25 @@
   display: block;
   text-decoration: none;
   padding: 11px;
-border: 1px solid #1c5bc3;
+  border: 1px solid #1c5bc3;
 }
 .gate__btn:hover {
-    background-color: #1c5bc3;
-    color: #ffffff;
-
-    }
-.gate__btn-text, .gate__btn-img {
+  background-color: #1c5bc3;
+  color: #ffffff;
+}
+.gate__btn-text,
+.gate__btn-img {
   display: inline-block;
   vertical-align: middle;
- }
- .gate__btn-img {
-    svg * {
+}
+.gate__btn-img {
+  svg * {
     fill: currentColor;
-
   }
 }
 .intro {
   background: url("../img/air/kzhhnb6xsqi-margo-brodowicz.png");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }

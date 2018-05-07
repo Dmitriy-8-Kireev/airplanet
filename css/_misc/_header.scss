@@ -1,31 +1,56 @@
 .header {
-    background-color: #4b73b5;
+  background-color: #4b73b5;
 }
-.logotip, .contacts {
-    float: left;
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-       
-    }
+.logotip,
+.contacts {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .logotip {
-    text-align: left
+  text-align: left;
 }
-.contacts   {
-    text-align: right
+.contacts {
+  text-align: right;
 }
 .contacts__phone {
-    color: #ffffff;
-font-family: Roboto;
-font-size: 21px;
-font-weight: 700;
-text-transform: uppercase;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .contacts__link {
-   opacity: 0.7;
-color: #ffffff;
-font-family: Roboto;
-font-size: 14px;
-font-weight: 700;
-text-decoration: underline; 
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.contacts__pop-up {
+  display: none;
+  position: absolute;
+}
+a:hover .contacts__pop-up {
+  display: block;
+  margin-top: -60px;
+  margin-left: 70px;
+  padding: 1em;
+  border: 16px solid transparent;
+  border-image: 16
+    repeating-linear-gradient(
+      -45deg,
+      #ffffff 0,
+      #ffffff 1em,
+      transparent 0,
+      transparent 2em,
+      #58a 0,
+      #58a 3em,
+      transparent 0,
+      transparent 4em
+    );
 }
