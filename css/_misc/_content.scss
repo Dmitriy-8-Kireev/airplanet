@@ -15,9 +15,9 @@
   float: left;
   width: 30%;
   // margin-right: 12%;
-  border:  5px solid transparent;
+  border: 5px solid transparent;
   &:hover {
-    border:  5px solid #f5f5f5;
+    border: 5px solid #f5f5f5;
   }
 }
 .rate__pic {
@@ -48,7 +48,6 @@
 }
 .rate__text,
 .rate__list {
- 
   text-align: left;
   color: #221f1f;
   font-family: Roboto;
@@ -122,19 +121,19 @@
   line-height: 30px;
 }
 
-.reserv__img   {
-height: 174px;
-background-color: #4bb56b;
-background: url('../img/air/Rectangle 1.png');
+.reserv__img {
+  height: 174px;
+  background-color: #4bb56b;
+  background: url("../img/air/Rectangle 1.png");
 }
 .reserv__text {
-width: 625px;
-height: 79px;
-color: #ffffff;
-font-family: Roboto;
-font-size: 18px;
-font-weight: 300;
-line-height: 30px
+  width: 625px;
+  height: 79px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
 }
 .reserv__container {
   position: relative;
@@ -146,4 +145,83 @@ line-height: 30px
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.visually-hidden {
+    display: none;
+}
+.pilot__desription {
+  @include clearfix;
+  margin-top: 45px;
+}
+.pilot__item {
+  float: left;
+  width: 33%;
+  text-align: center;
+  width: 263px;
+  height: 350px;
+}
+.pilot_pic-wrapper {
+  width: 160px;
+height: 160px;
+   border-radius: 50%;
+   margin: 0 auto;
+}
+.pilot__pic {
+  position: relative;
+  background-color:   #4b73b5;
+  opacity: 0.6;
+  border-radius: 50%;
+height: 100%;
   }
+.pilot__name {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+    color: #ffffff;
+   @include roboto(italic);
+  line-height: 21px;
+}
+  .pilot__img {
+    border-radius: 50%;
+      }
+.pilot__full-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+} 
+.pilot__profession {
+color: #4b73b5;
+@include roboto(italic);
+font-weight: 700;
+}
+.pilot_opinion {
+@include roboto(light);
+font-weight: 500;
+}
+
+.partners__item {
+    width: 160px;
+    height: 62px;
+    float: left;
+    margin-right: 114px;
+    text-align: center;
+    margin-bottom: 45px;
+
+
+}
+.partners__img-wrapper {
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+.partners__img-wrapper:hover {
+    filter: none;
+}
+.partners__link {
+    display: inline-block;
+}
