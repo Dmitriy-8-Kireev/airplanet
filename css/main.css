@@ -586,6 +586,43 @@ a {
   display: inline-block;
   vertical-align: middle; }
 
+/* --------- breadcrums --------- */
+.breadcrums {
+  margin-top: 20px; }
+
+.breadcrums__list:before, .breadcrums__list:after {
+  content: "";
+  display: table; }
+
+.breadcrums__list:after {
+  clear: both; }
+
+.breadcrums__item {
+  float: left; }
+
+.title--comment {
+  font-size: 1.5em;
+  margin: 0.4em 0; }
+
+.breadcrums__link--main {
+  opacity: 0.8;
+  font-family: "Roboto - Light Italic";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  /* Text style for "Г, лавная" */
+  color: #1c5bc3;
+  text-decoration: underline; }
+
+.breadcrums__link--comment {
+  opacity: 0.8;
+  color: #221f1f;
+  font-family: "Roboto - Light Italic";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 5px; }
+
 /* --------- content --------- */
 .rate:before, .rate:after {
   content: "";
@@ -606,8 +643,12 @@ a {
 .rate__premium,
 .rate__standart {
   float: left;
-  width: 20%;
-  margin-right: 12%; }
+  width: 30%;
+  border: 5px solid transparent; }
+  .rate__lux:hover,
+  .rate__premium:hover,
+  .rate__standart:hover {
+    border: 5px solid #f5f5f5; }
 
 .rate__pic {
   width: 68px;
@@ -633,9 +674,6 @@ a {
   font-weight: 700;
   line-height: 51.38px; }
 
-.rate__text {
-  text-align: center; }
-
 .rate__list {
   margin-left: 17%; }
   .rate__list li {
@@ -643,7 +681,6 @@ a {
 
 .rate__text,
 .rate__list {
-  width: 185px;
   text-align: left;
   color: #221f1f;
   font-family: Roboto;
@@ -651,8 +688,10 @@ a {
   font-weight: 300;
   line-height: 30px; }
 
+.rate__text {
+  text-align: center; }
+
 .rate__price {
-  margin-left: 17%;
   color: #212121;
   font-family: Roboto;
   font-size: 52px;
@@ -675,11 +714,21 @@ a {
 .news__list {
   margin-top: 55px;
   margin-left: -5px; }
+  .news__list:before, .news__list:after {
+    content: "";
+    display: table; }
+  .news__list:after {
+    clear: both; }
 
 .news__item {
+  border-bottom: 2px solid #f5f5f5;
   padding-bottom: 18px;
-  margin-bottom: 30px;
-  height: 17%; }
+  margin-bottom: 30px; }
+  .news__item:before, .news__item:after {
+    content: "";
+    display: table; }
+  .news__item:after {
+    clear: both; }
 
 .news__pic {
   width: 160px;

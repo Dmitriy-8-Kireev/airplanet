@@ -13,8 +13,12 @@
 .rate__premium,
 .rate__standart {
   float: left;
-  width: 20%;
-  margin-right: 12%;
+  width: 30%;
+  // margin-right: 12%;
+  border:  5px solid transparent;
+  &:hover {
+    border:  5px solid #f5f5f5;
+  }
 }
 .rate__pic {
   width: 68px;
@@ -35,9 +39,7 @@
   font-weight: 700;
   line-height: 51.38px;
 }
-.rate__text {
-  text-align: center;
-}
+
 .rate__list {
   margin-left: 17%;
   li {
@@ -46,7 +48,7 @@
 }
 .rate__text,
 .rate__list {
-  width: 185px;
+ 
   text-align: left;
   color: #221f1f;
   font-family: Roboto;
@@ -54,8 +56,10 @@
   font-weight: 300;
   line-height: 30px;
 }
+.rate__text {
+  text-align: center;
+}
 .rate__price {
-  margin-left: 17%;
   color: #212121;
   font-family: Roboto;
   font-size: 52px;
@@ -76,13 +80,14 @@
 
 .news__list {
   margin-top: 55px;
-
+  @include clearfix;
   margin-left: -5px;
 }
 .news__item {
+  border-bottom: 2px solid #f5f5f5;
   padding-bottom: 18px;
   margin-bottom: 30px;
-  height: 17%;
+  @include clearfix;
 }
 .news__pic {
   width: 160px;

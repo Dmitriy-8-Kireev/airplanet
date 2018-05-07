@@ -1,0 +1,33 @@
+.breadcrums {
+    margin-top: 20px;
+}
+.breadcrums__list {
+     @include clearfix;
+}
+.breadcrums__item {
+   float: left;
+}
+.title--comment {
+    font-size: 1.5em;
+    margin: 0.4em 0;
+}
+.breadcrums__link--main {
+opacity: 0.8;
+font-family: "Roboto - Light Italic";
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+/* Text style for "Г, лавная" */
+color: #1c5bc3;
+text-decoration: underline;
+
+    }
+.breadcrums__link--comment
+{opacity: 0.8;
+color: #221f1f;
+font-family: "Roboto - Light Italic";
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+margin-left: 5px;
+}
