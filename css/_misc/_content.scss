@@ -121,8 +121,29 @@
   font-weight: 300;
   line-height: 30px;
 }
+
 .reserv__img   {
 height: 174px;
 background-color: #4bb56b;
-background: url('../img/air/Rectangle1.png');
-} 
+background: url('../img/air/Rectangle 1.png');
+}
+.reserv__text {
+width: 625px;
+height: 79px;
+color: #ffffff;
+font-family: Roboto;
+font-size: 18px;
+font-weight: 300;
+line-height: 30px
+}
+.reserv__container {
+  position: relative;
+  @include clearfix;
+}
+.reserv__text {
+  margin-top: 78px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
