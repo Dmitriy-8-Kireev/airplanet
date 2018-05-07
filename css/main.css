@@ -761,6 +761,11 @@ a {
   font-weight: 300;
   line-height: 30px; }
 
+.reserv__img {
+  height: 174px;
+  background-color: #4bb56b;
+  background: url("../img/air/Rectangle1.png"); }
+
 /* --------- pagination --------- */
 .pagination {
   width: 600px;
