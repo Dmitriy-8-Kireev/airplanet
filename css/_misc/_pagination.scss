@@ -27,6 +27,15 @@
 }
 .pagination__item {
   padding: 3px 8px;
+  &:hover {
+    background-color: #4b73b5;
+  border-radius: 5px;
+  color: #ec1e79;
+  padding: 3px 8px;
+.pagination__link {
+  color: #ffffff;
+}
+  }
 }
 .pagination__item--active {
   background-color: #4b73b5;

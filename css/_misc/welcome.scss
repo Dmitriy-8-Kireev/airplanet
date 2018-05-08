@@ -1,4 +1,4 @@
-.wraper {
+.intro {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,7 +6,7 @@
   bottom: 0;
   text-align: center;
 }
-.wraper:before {
+.intro:before {
   content: "";
   display: inline-block;
   height: 100%;
