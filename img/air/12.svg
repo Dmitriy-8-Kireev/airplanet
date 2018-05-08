@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.36" height="24.99" viewBox="0 0 24.36 24.99">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>Ресурс 7</title>
+  <g>
+    <polyline class="a" points="11.87 2.12 22.24 12.49 11.87 22.86"/>
+    <polyline class="a" points="5.29 8.07 9.7 12.49 5.29 16.91"/>
+    <line class="a" x1="1.5" y1="12.49" x2="20.54" y2="12.49"/>
+  </g>
+</svg>
