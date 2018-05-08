@@ -565,11 +565,11 @@ a:hover .contacts__pop-up {
 .maincontent {
   float: left; }
 
-.top__block:before, .top__block:after {
+.top:before, .top:after {
   content: "";
   display: table; }
 
-.top__block:after {
+.top:after {
   clear: both; }
 
 .sidebar {
@@ -824,7 +824,6 @@ a:hover .contacts__pop-up {
   float: left;
   width: 30%;
   text-align: center;
-  height: 350px;
   margin-right: 2%; }
 
 .pilot_pic-wrapper {
@@ -864,16 +863,17 @@ a:hover .contacts__pop-up {
 .pilot__full-name {
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px; }
+  line-height: 21px;
+  font-family: "robotobold"; }
 
 .pilot__profession {
   color: #4b73b5;
   font-family: "robotolight_italic";
   font-weight: 700; }
 
-.pilot_opinion {
+.pilot__opinion {
   font-family: "robotolight";
-  font-weight: 500; }
+  font-weight: 300; }
 
 .partners {
   margin-top: 40px;
@@ -1188,7 +1188,7 @@ li.sidebar__item {
   line-height: 18px; }
 
 .social__text,
-.autor__name,
+.adress__name,
 .adress__loftsh {
   color: #ffffff;
   font-family: "robotobold";

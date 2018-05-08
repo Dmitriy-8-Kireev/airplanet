@@ -157,7 +157,6 @@
   float: left;
   width: 30%;
   text-align: center;
-  height: 350px;
   margin-right: 2%;
 }
 .pilot_pic-wrapper {
@@ -196,15 +195,16 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
+  @include roboto(bold);
 }
 .pilot__profession {
   color: #4b73b5;
   @include roboto(italic);
   font-weight: 700;
 }
-.pilot_opinion {
+.pilot__opinion {
   @include roboto(light);
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .partners {
